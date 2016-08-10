@@ -1,0 +1,28 @@
+{
+  "name": "react-native-keyboard-accessory",
+  "version": "1.0.0",
+  "description": "Builds on keyboard-spacer and adds accessories",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kentos/react-native-keyboard-accessory.git"
+  },
+  "keywords": [
+    "keyboard",
+    "accessory",
+    "keyboard",
+    "spacer"
+  ],
+  "author": "@kentos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kentos/react-native-keyboard-accessory/issues"
+  },
+  "homepage": "https://github.com/kentos/react-native-keyboard-accessory#readme",
+  "dependencies": {
+    "react-native-keyboard-spacer": "^0.3.0"
+  }
+}
