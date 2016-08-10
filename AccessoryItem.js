@@ -6,7 +6,7 @@ import {
   StyleSheet,
 } from 'react-native';
 
-export default const AccessoryItem = ({ onPress, text }) =>
+export default AccessoryItem = ({ onPress, text }) =>
   <TouchableWithoutFeedback onPress={onPress}>
     <View style={styles.item}>
       <Text style={styles.buttonText}>{text}</Text>
