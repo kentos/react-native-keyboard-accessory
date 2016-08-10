@@ -4,7 +4,7 @@ import {
   View,
   Text,
   StyleSheet,
-  DeviceEventEmitter,
+  Keyboard,
   Platform,
   TouchableWithoutFeedback,
 } from 'react-native';
@@ -30,13 +30,13 @@ class KeyboardSpacerAccessory extends React.Component {
   componentDidMount() {
     if (Platform.OS == "android") {
       this._listeners = [
-        DeviceEventEmitter.addListener('keyboardDidShow', this.onKeyboardShow),
-        DeviceEventEmitter.addListener('keyboardDidHide', this.onKeyboardHide)
+        Keyboard.addListener('keyboardDidShow', this.onKeyboardShow),
+        Keyboard.addListener('keyboardDidHide', this.onKeyboardHide)
       ];
     } else {
       this._listeners = [
-        DeviceEventEmitter.addListener('keyboardWillShow', this.onKeyboardShow),
-        DeviceEventEmitter.addListener('keyboardWillHide', this.onKeyboardHide)
+        Keyboard.addListener('keyboardWillShow', this.onKeyboardShow),
+        Keyboard.addListener('keyboardWillHide', this.onKeyboardHide)
       ];
     }
   }
@@ -84,4 +84,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default KeyboardSpacerAccessoryView;
+export default KeyboardSpacerAccessory;

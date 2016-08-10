@@ -4,6 +4,7 @@ import {
   View,
   TouchableWithoutFeedback,
   StyleSheet,
+  Text,
 } from 'react-native';
 
 export default AccessoryItem = ({ onPress, text }) =>
